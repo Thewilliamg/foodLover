@@ -22,14 +22,14 @@
     opacity: 0.9;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     box-sizing: content-box;
 }
 .menu1{
     width: 100%;
     height: 12%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .logo1 .logoimg1{
@@ -48,36 +48,40 @@
     width: 40%;
     height: 100%;
     flex-direction: row;
-    font-size: 18px;
 }
 .menu_izq a,.menu_der a{
-    color: #fff;
-    font-family: "Roboto Slab", serif;
+    color: var(--color-font);
+    font-family: "Roboto Slab";
     font-weight: 600;
     text-decoration-line: none;
+    font-size: 18px;
 }
 .blog1{
     width: 100%;
-    height: auto;
+    height: 70%;
     display: flex;
     justify-content: center;
     gap: 3%;
+    padding-bottom: 4%;
 }
-
+.imagen1{
+    display: flex;
+    align-items: center;
+}
 .imagen1 img{
-    height: 100%;
+    height: 80%;
     width: min-content;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 .texto1{
-    width: 40%;
+    width: 38%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .texto1 h1{
-    width: 80%;
+    width: 95%;
     font-size: 5em;
     color: var(--color-primary);
 }
@@ -148,16 +152,14 @@
 .page3{
     display: flex;
     width: 100%;
-    /* height: 250vh; */
+    height: 200vh;
     background-color: var(--color-secundary);
     background-image: url(../storage/img/placeYourImageHereFood.png);
-    background-size: cover;
+    background-size: 100% 100%;
+    position: center;
     background-repeat: no-repeat;
     flex-direction: column;
-    /* align-content:space-between; */
 }
-
-
 .page3 .imagen4{
     display: flex;
     justify-content: end;
@@ -179,7 +181,6 @@
     width: 40%;
 }
 .imagen4 img{
-    background-color: red;
     bottom: 85%;
     margin-bottom: 30px;
 }
@@ -204,4 +205,90 @@
     display: flex;
     justify-content: space-between;
 
+}
+
+.page4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+    background-color: var(--color-secundary);
+    overflow: hidden;
+}
+.page4 .container{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.page4 .titulo4{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    box-sizing: content-box;
+}
+
+.page4 .titulo4 h2{
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--color-font);
+}
+.page4 .gallery{
+    height: 90%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 1%;
+}
+.page4 .gallery img{
+    width: 390px;
+    height: 50%;
+}
+
+.page5{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../storage/img/placeYourImageHereOur0.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+.page5 .cuadro{
+    display: flex;
+    width: 45%;
+    height: 60vh;
+    border: 7px solid var(--color-primary);
+    align-self: center;
+    background-color: var(--color-secundary);
+    color: var(--color-font);
+    box-sizing: content-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+.page5 .cuadro h1{
+    font-size: 400%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+.page5 .cuadro .texto{
+    display: flex;
+    justify-content: center;
+}
+.page5 .cuadro p{
+    width: 70%;
+    height: auto;
+    font-size: 200%;
+    display: flex;
+    text-align: center;
+    align-content: center ;
 }
