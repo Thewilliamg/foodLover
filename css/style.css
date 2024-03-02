@@ -5,35 +5,36 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
     font-family: "Roboto Slab";
 }
 
 .page_1{
     height: 100vh;
     width: 100%;
-    background-image: url(/storage/img/placeYourImageHere0.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url(../storage/img/placeYourImageHere0.png); /* URL de la imagen clara */
     background-size: cover;
-    opacity: 0.9;
+    background-repeat: no-repeat;
+    box-sizing: content-box;
 }
 .fondo1{
     width: 100%;
     height: 100%;
-    background-color: #17171e;
-    opacity: 0.95;
+    opacity: 0.9;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: content-box;
 }
 .menu1{
     width: 100%;
-    height: 15%;
+    height: 12%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 .logo1 .logoimg1{
     width: 100%;
-    height: 80px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,68 +44,64 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 10%;
     width: 40%;
     height: 100%;
     flex-direction: row;
-    font-size: 19px;
+    font-size: 18px;
 }
 .menu_izq a,.menu_der a{
     color: #fff;
     font-family: "Roboto Slab", serif;
-    font-weight: 900;
+    font-weight: 600;
     text-decoration-line: none;
 }
 .blog1{
     width: 100%;
+    height: auto;
     display: flex;
-    padding-top: 80px;
+    justify-content: center;
+    gap: 3%;
 }
-.imagen1{
-    width: 50%;
-    height: 100%;
-    padding-right: 20px ;
-    display: flex;
-    justify-content: end;
-    box-sizing: border-box;
-    align-items: center;
-}
+
 .imagen1 img{
-    height: 600px;
+    height: 100%;
     width: min-content;
     box-sizing: border-box;
 }
 .texto1{
-    width: 50%;
+    width: 40%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    padding-left: 40px;
     justify-content: center;
-    gap: 10px;
 }
 .texto1 h1{
-    font-size: 90px;
-    color: #e58f00;
+    width: 80%;
+    font-size: 5em;
+    color: var(--color-primary);
 }
 .texto1 h2{
-    width: 700px;
-    font-size: 30px;
+    width: 80%;
+    font-size: 2em;
+    font-family: "Roboto Slab",serif;
+    font-weight: 600;
     color: #fff;
     padding-top: 5px;
     padding-bottom: 20px;
 }
 #contact-us{
-    font-size: 30px;
+    font-size: 2em;
     font-family: "Roboto Slab", serif;
     font-weight: 800;
-    width: 25%;
-    height:3em;
+    width: 30%;
+    height:2.5em;
     color: #17171e;
-    background-color: #e58f00;
+    background-color: var(--color-primary);
     border-style: none;
     border-radius: 10px;
     cursor: pointer;
+    z-index: 1;
 }
 .menu1 :hover{
     color: #e58f00;
@@ -126,43 +123,85 @@
 }
 
 .imagen2 img{
-    height: 800px;
+    height: 600px;
     width: auto;
 }
 
 .texto2 h1{
-    width: 500px;
-    font-size: 65px;
-    color: #fff;
-    padding-top: 5px;
-    padding-bottom: 20px;
-}
-
-.texto2 h2{
-    width: 700px;
+    width: 50%;
     font-size: 45px;
     color: #fff;
-    padding-top: 5px;
-    padding-bottom: 20px;
+}
+.texto2{
+    display: flex;
+    width:40%;
+    height: auto;
+    flex-direction: column;
+}
+.texto2 h2{
+    width: 100%;
+    font-size: 2.2em;
+    color: #fff;
+    display: flex;
 }
 
 .page3{
+    display: flex;
     width: 100%;
-    height: 200vh;
-    background-color: red;
+    /* height: 250vh; */
+    background-color: var(--color-secundary);
     background-image: url(../storage/img/placeYourImageHereFood.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* align-content:space-between; */
 }
 
-.page3 .imagen3 img{
-    /* width: 100%; */
-    /* object-fit: cover; */
-}
 
 .page3 .imagen4{
-    /* position: absolute; */
-    /* position: 200vh; */
-    top:0;
+    display: flex;
+    justify-content: end;
+}
+.page3 .imagen4 img{
+    margin-top: auto;
+}
+
+.page3 .imagen5{
+    margin-top: 330px;
+    display: flex;
+    bottom: 0;
+    align-items: end;
+}
+
+ .page3 .texto{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.imagen4 img{
+    background-color: red;
+    bottom: 85%;
+    margin-bottom: 30px;
+}
+
+.page3 .texto h1{
+    font-family: "Roboto Slab",serif;
+    font-weight: 900;
+    color: var(--color-font);
+    font-size: 45px;
+}
+
+.page3 .texto{
+    font-family: "Roboto Slab",serif;
+    font-weight: 600;
+    color: var(--color-font);
+    font-size: 2em;
+    display: flex;
+    align-self: end;
+    margin-right: 23%;
+}
+.page3 .platos3{
+    display: flex;
+    justify-content: space-between;
+
 }
