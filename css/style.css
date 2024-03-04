@@ -31,6 +31,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 1%;
 }
 .logo1 .logoimg1{
     width: 100%;
@@ -209,18 +210,16 @@
 
 .page4{
     width: 100%;
-    height: 100vh;
-    display: flex;
-    object-fit: cover;
-    align-items: center;
+    height: 160vh;
     background-color: var(--color-secundary);
     overflow: hidden;
 }
 .page4 .container{
-    height: 90%;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 .page4 .titulo4{
@@ -228,27 +227,27 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: end;
     box-sizing: content-box;
 }
 
 .page4 .titulo4 h2{
-    font-size: 35px;
+    font-size: 55px;
     font-weight: 800;
     color: var(--color-font);
 }
 .page4 .gallery{
-    height: 90%;
-    width: 80%;
+    height: 85%;
+    width: 100%;
     display: flex;
+    align-content: center;
     justify-content: center;
     flex-wrap: wrap;
-    align-content: space-between;
-    gap: 1%;
+    gap: 2%;
 }
 .page4 .gallery img{
-    width: 390px;
-    height: 50%;
+    flex: 0 1 28%;/*para que se empequeñezca y tenga un tamaño iniciañ del 33%*/
+    height: 580px;
 }
 
 .page5{
@@ -291,4 +290,122 @@
     display: flex;
     text-align: center;
     align-content: center ;
+}
+
+.page6{
+    display: flex;
+    width: 100%;
+    height: 110vh;
+    background-color: var(--color-secundary);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page6 .cajas{
+    display: flex;
+    width: 100%;
+    height: 75%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space;
+    gap: 2%;
+}
+.page6 .box{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+}
+.page6 .titulo h1{
+    font-family: "Roboto Slab";
+    color: var(--color-font);
+    font-size: 40px;
+    width: 100%;
+    height: 15%;
+}
+
+.page6 img{
+    width: 100%;
+    object-fit: fill;
+    align-self: center;
+}
+
+.page6 h2{
+    color: var(--color-primary);
+    font-weight: 800;
+    font-size: 31px;
+}
+.page6 p{
+    color: var(--color-font);
+}
+.page6 .precio{
+    color: var(--color-primary);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.page7{
+    height: 100vh;
+    width: 100%;
+}
+.page7 .container-orange{
+    display: flex;
+    height: 50%;
+    align-items: center;
+    background-color: var(--color-primary);
+}
+
+.page7 .container-gray{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    background-color: var(--color-ternario);
+    overflow: hidden;
+}
+
+.page7 .texto{
+    margin-left: 5%;
+    width: 40%;
+    color: var(--color-font);
+    height: 60%;
+    row-gap: 10%;
+}
+
+.page7 h2{
+    font-family: "Roboto Slab";
+    font-size: 40px;
+}
+.page7 h4{
+    padding-top: 3%;
+    font-family: "Roboto Slab";
+    font-size: 30px;
+}
+.page7 img{
+    object-fit: none;
+}
+.page7 .menu-footer{
+    width: 70%;
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    flex-wrap:nowrap;
+    gap: 3%;
+    color: var(--color-font);
+}
+.page7 .icons{
+    display: flex;
+    gap: 10%;
+}
+.page7 li:hover{
+    color: var(--color-primary);
+    cursor: pointer;
 }
